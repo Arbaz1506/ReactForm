@@ -1,0 +1,93 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(145deg, #f6f8fa, #e9ebee);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 700px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.form-container:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.form-container input[type="text"],
+.form-container select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 8px;
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #111827;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-container input[type="text"]:focus,
+.form-container select:focus {
+  border-color: #3f72af;
+}
+
+.form-container input[type="checkbox"],
+.form-container input[type="radio"] {
+  transform: scale(1.15);
+  margin-right: 10px;
+  accent-color: #3f72af;
+}
+
+.form-container div {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #1f2937;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #3f72af, #274d77);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #355f90, #1e3b5d);
+}
